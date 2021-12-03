@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Homepage from "./pages/Homepage";
+import Products from "./pages/Products";
 
 function App() {
 	return (
@@ -12,7 +13,8 @@ function App() {
 
 			<div className='right'>
 				<Navbar />
-				<Homepage />
+				{/* <Homepage /> */}
+				<Products />
 			</div>
 		</div>
 	);
