@@ -10,8 +10,10 @@ const Products = () => {
 				<Product />
 				<Product />
 				<Product />
+				<Product />
 			</div>
 			<div className='prod-row'>
+				<Product />
 				<Product />
 				<Product />
 				<Product />

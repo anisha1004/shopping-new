@@ -1,0 +1,47 @@
+.login {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.login-left {
+	width: 50%;
+}
+
+.welcome {
+	font-size: 30px;
+	font-weight: bold;
+	color: #444b59;
+}
+
+.signup {
+	font-size: 20px;
+}
+
+.yellow {
+	color: #f4de4d;
+}
+
+.user {
+	font-size: 24px;
+	font-weight: 400;
+	color: #444b59;
+}
+
+.login-ip {
+	border-radius: 80px;
+	border: 2px solid #f4de4d;
+}
+
+.login-ip:focus {
+	border: 2px solid #f4de4d;
+}
+
+.signin {
+	border-radius: 80px;
+	background-color: #f4de4d;
+	outline: none;
+	border: none;
+	font-family: "Nunito", sans-serif;
+	font-weight: 800;
+}
