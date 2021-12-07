@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import Products from "./pages/Products";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Demopage from "./pages/demopage";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 						<Route path='/login' element={<Login />} />
 						{/* <Homepage /> */}
 						{/* <Products /> */}
+						<Route path='/demo' element={<Demopage />} />
 					</Routes>
 				</Router>
 			</div>
