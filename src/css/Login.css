@@ -6,6 +6,7 @@
 
 .login-left {
 	width: 50%;
+	padding-top: 4.8vh;
 }
 
 .welcome {
@@ -16,6 +17,7 @@
 
 .signup {
 	font-size: 20px;
+	padding: 5vh 0;
 }
 
 .yellow {
@@ -26,11 +28,18 @@
 	font-size: 24px;
 	font-weight: 400;
 	color: #444b59;
+	padding-top: 2vh;
+}
+
+.username {
+	padding: 2vh 0;
 }
 
 .login-ip {
 	border-radius: 80px;
 	border: 2px solid #f4de4d;
+	width: 300px;
+	height: 30px;
 }
 
 .login-ip:focus {
@@ -43,5 +52,38 @@
 	outline: none;
 	border: none;
 	font-family: "Nunito", sans-serif;
-	font-weight: 800;
+	font-weight: 900;
+	font-size: 18px;
+	height: 40px;
+	width: 110px;
+}
+
+.remember {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4vh 0;
+}
+
+.remember-me {
+	padding-left: 9px;
+}
+
+.rem-radio {
+	display: flex;
+	align-items: center;
+}
+
+.forget {
+	padding-right: 7vw;
+}
+
+.rem-radio > div > span {
+	padding: 0 !important;
+}
+
+.login-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

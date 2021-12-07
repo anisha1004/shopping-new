@@ -1,10 +1,13 @@
 import React from "react";
 import "../css/Sidebar.css";
 import NewIcon from "../images/new.svg";
+import Logo from "../images/logo.svg";
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
-			<div className='logo'>caped</div>
+			<div className='logo'>
+				<img src={Logo} className='logo-img' />
+			</div>
 
 			<div className='side-up'>
 				<div className='side-menu'>

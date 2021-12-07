@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage";
 import Products from "./pages/Products";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Demopage from "./pages/demopage";
+import Demopage from "./pages/Demopage.js";
 
 function App() {
 	return (

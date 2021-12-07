@@ -10,6 +10,22 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 50%;
+	width: 60%;
 	font-family: "Rubik", sans-serif;
+	padding-right: 1vw;
+}
+
+.search {
+	display: flex;
+}
+
+.searchbar {
+	border: none;
+	outline: none;
+}
+
+.search-icon {
+	height: 20px;
+	object-fit: contain;
+	padding-right: 9px;
 }

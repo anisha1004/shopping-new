@@ -2,11 +2,13 @@ import React from "react";
 import "../css/Navbar.css";
 import Cart from "../images/cart.svg";
 import Profile from "../images/profile.svg";
+import Search from "../images/search.svg";
 const Navbar = () => {
 	return (
 		<div className='navbar'>
-			<div className='searchbar'>
-				<input />
+			<div className='search'>
+				<img src={Search} className='search-icon' />
+				<input placeholder='Search store' className='searchbar' />
 			</div>
 			<div className='nav-menu'>
 				<div className=''>PRODUCTS</div>

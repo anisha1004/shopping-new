@@ -15,7 +15,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: yellow;
+	padding-top: 15px;
+}
+
+.logo-img {
+	object-fit: contain;
+	height: 40px;
+	padding: 5px;
 }
 
 .side-up {
@@ -30,4 +36,9 @@
 
 .side-options {
 	padding-top: 5vh;
+}
+
+.side-heading {
+	font-size: 35px;
+	font-weight: 700;
 }
