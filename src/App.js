@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Demopage from "./pages/Demopage.js";
 import { AuthProvider } from "./Context/auth";
+import Register from "./pages/Register";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 						<Routes>
 							<Route path='/products' element={<Products />} />
 							<Route path='/login' element={<Login />} />
+							<Route path='/register' element={<Register />} />
 							{/* <Homepage /> */}
 							{/* <Products /> */}
 							<Route path='/demo' element={<Demopage />} />

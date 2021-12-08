@@ -1,0 +1,85 @@
+.register {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.reg-up {
+	height: 100%;
+	width: 75%;
+	padding-right: 5vw;
+}
+
+.reg-heading {
+	font-weight: 700;
+	font-family: "Rubik";
+	color: #444b59;
+	font-size: 30px;
+	padding-top: 7vh;
+}
+
+.login-cont {
+	padding-top: 3vh;
+}
+
+.already {
+	color: #444b59;
+}
+
+.login-text {
+	color: #f4de4d;
+}
+
+.reg-options {
+	display: flex;
+	justify-content: space-between;
+}
+
+.reg-btn-cont {
+	padding-top: 30px;
+}
+
+.register-btn {
+	border-radius: 80px;
+	background-color: #f4de4d;
+	outline: none;
+	border: none;
+	font-family: "Nunito", sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	height: 40px;
+	width: 130px;
+}
+
+.reg-down {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 25%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.reg-circle-1 {
+	height: 60px;
+	object-fit: contain;
+	padding-top: 20px;
+}
+
+.reg-circle-2 {
+	height: 80px;
+	object-fit: contain;
+	padding-top: 20px;
+}
+
+.reg-circle-3 {
+	height: 90px;
+	object-fit: contain;
+	padding-top: 20px;
+}
+
+.reg-circle-4 {
+	height: 110px;
+	object-fit: contain;
+	padding-top: 20px;
+}

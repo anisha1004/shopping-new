@@ -8,6 +8,7 @@ import Accessories from "../images/accessories.svg";
 import Activewear from "../images/activewear.svg";
 import Gifts from "../images/gifts.svg";
 import Inspiration from "../images/inspiration.svg";
+import Help from "../images/help.svg";
 
 const Sidebar = () => {
 	return (
@@ -65,7 +66,12 @@ const Sidebar = () => {
 						</div>
 					</div>
 				</div>
-				<div className='help'>Help Center</div>
+				<div className='help-cont'>
+					<div className='icon'>
+						<img src={Help} alt='icon' />
+					</div>
+					<div className='help'>Help Center</div>
+				</div>
 			</div>
 		</div>
 	);

@@ -42,3 +42,12 @@
 	font-size: 35px;
 	font-weight: 700;
 }
+
+.help-cont {
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	padding-right: 5px;
+}
