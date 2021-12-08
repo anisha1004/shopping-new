@@ -15,22 +15,22 @@ const Homepage = () => {
 		<div className='home'>
 			<div className='home-top'>
 				<div className='home-top-left'>
-					<img src={I1} className='test' />
-					<img src={I2} className='test' />
+					<img src={I1} className='test' alt='someImage' />
+					<img src={I2} className='test' alt='someImage' />
 				</div>
 				<div className='home-top-right'>
-					<img src={G1} />
-					<img src={G2} />
+					<img src={G1} alt='someImage' />
+					<img src={G2} alt='someImage' />
 				</div>
 			</div>
 			<div className='home-bottom'>
 				<div className='home-bottom-left'>
-					<img src={G3} />
-					<img src={G4} />
+					<img src={G3} alt='someImage' />
+					<img src={G4} alt='someImage' />
 				</div>
 				<div className='home-bottom-right'>
-					<img src={I3} className='test' />
-					<img src={I4} className='test' />
+					<img src={I3} className='test' alt='someImage' />
+					<img src={I4} className='test' alt='someImage' />
 				</div>
 			</div>
 		</div>
