@@ -1,7 +1,14 @@
 import React from "react";
 import "../css/Sidebar.css";
-import NewIcon from "../images/new.svg";
 import Logo from "../images/logo.svg";
+import NewIcon from "../images/new.svg";
+import Clothing from "../images/clothing.svg";
+import Shoes from "../images/shoes.svg";
+import Accessories from "../images/accessories.svg";
+import Activewear from "../images/activewear.svg";
+import Gifts from "../images/gifts.svg";
+import Inspiration from "../images/inspiration.svg";
+
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
@@ -17,19 +24,44 @@ const Sidebar = () => {
 							<div className='icon'>
 								<img src={NewIcon} alt='icon' />
 							</div>
-							<div>NEW IN </div>
+							<div>New In </div>
 						</div>
 						<div className='soption'>
 							<div className='icon'>
-								<img src={NewIcon} alt='icon' />
+								<img src={Clothing} alt='icon' />
 							</div>
-							<div>CLOTHING </div>
+							<div>Clothing </div>
+						</div>
+
+						<div className='soption'>
+							<div className='icon'>
+								<img src={Shoes} alt='icon' />
+							</div>
+							<div>Shoes </div>
 						</div>
 						<div className='soption'>
 							<div className='icon'>
-								<img src={NewIcon} alt='icon' />
+								<img src={Accessories} alt='icon' />
 							</div>
-							<div>FURNITURE </div>
+							<div>Accessories </div>
+						</div>
+						<div className='soption'>
+							<div className='icon'>
+								<img src={Activewear} alt='icon' />
+							</div>
+							<div>Activewear </div>
+						</div>
+						<div className='soption'>
+							<div className='icon'>
+								<img src={Gifts} alt='icon' />
+							</div>
+							<div>Gifts and Living </div>
+						</div>
+						<div className='soption'>
+							<div className='icon'>
+								<img src={Inspiration} alt='icon' />
+							</div>
+							<div>Inspiration </div>
 						</div>
 					</div>
 				</div>
