@@ -101,7 +101,7 @@ const Login = () => {
 				)}
 			</div>
 			<div className='login-right'>
-				<img src={LoginI} alt='loginImage' />
+				<img src={LoginI} alt='loginImage' className='login-img' />
 			</div>
 		</div>
 	);
