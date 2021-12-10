@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Demopage from "./pages/Demopage.js";
 import { AuthProvider } from "./Context/auth";
 import Register from "./pages/Register";
+import Cart from "./pages/Cart";
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 							{/* <Homepage /> */}
 							{/* <Products /> */}
 							<Route path='/demo' element={<Demopage />} />
+							<Route path='/cart' element={<Cart />} />
 						</Routes>
 					</Router>
 				</div>
