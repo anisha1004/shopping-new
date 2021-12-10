@@ -15,9 +15,11 @@ module.exports = gql`
 		contentType: String!
 	}
 	type Product {
+		productCategory: String!
 		productName: String!
 		productPrice: Int!
 		productImage: Image!
+		productStock: Int!
 	}
 	input RegisterInput {
 		firstName: String!
@@ -31,6 +33,7 @@ module.exports = gql`
 	type Query {
 		getUser(username: String): User
 		getProducts: [Product]
+		getProductsByCategory(category: String): [Product]
 	}
 	type Mutation {
 		register(registerInput: RegisterInput): User!

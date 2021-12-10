@@ -11,7 +11,7 @@ function Demopage() {
 	return (
 		<div>
 			<img
-				src={`data:image/png;base64,${
+				src={`data:image/svg+xml;base64,${
 					products && products[0].productImage.data
 				}`}
 			/>
