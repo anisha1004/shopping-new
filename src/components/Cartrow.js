@@ -30,7 +30,7 @@ const Cartrow = () => {
 			</div> */}
 			<div className='item'>
 				<div className='item-left'>
-					<img src={Item1} />
+					<img src={Item1} className='obj-img' />
 				</div>
 				<div className='item-right'>
 					<div className='row-1'>
