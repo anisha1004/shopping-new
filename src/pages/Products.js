@@ -19,8 +19,8 @@ const Products = () => {
 				{loading ? (
 					<div style={{ fontSize: "50px" }}> LOADING </div>
 				) : (
-					pageProducts.map((prod) => (
-						<div className='prod-row-container'>
+					pageProducts.map((prod, idx) => (
+						<div className='prod-row-container' key={idx}>
 							<Product prod={prod} />
 						</div>
 					))
@@ -35,6 +35,7 @@ export default Products;
 const GET_PRODUCTS = gql`
 	{
 		getProducts {
+			id
 			productName
 			productPrice
 			productImage {

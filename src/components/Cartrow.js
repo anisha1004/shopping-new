@@ -6,7 +6,10 @@ import Minus from "../images/minus.svg";
 import Delete from "../images/delete.svg";
 import Line from "../images/line.svg";
 
-const Cartrow = () => {
+const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
+	const getTotalPrice = () => {
+		return cartItem.price * cartItem.qty;
+	};
 	return (
 		<div className='cartrow'>
 			{/* <div className='item'>
@@ -30,20 +33,24 @@ const Cartrow = () => {
 			</div> */}
 			<div className='item'>
 				<div className='item-left'>
-					<img src={Item1} className='obj-img' alt='products' />
+					<img
+						className='obj-img'
+						alt='product-img'
+						src={`data:image/svg+xml;base64,${cartItem.imageUrl}`}
+					/>
 				</div>
 				<div className='item-right'>
 					<div className='row-1'>
 						<div className='name'>Watch</div>
 					</div>
 					<div className='row-2'>
-						<div className='price'>&#8377;1000</div>
+						<div className='price'>&#8377; {cartItem.price}</div>
 						<div className='row-2-right'>
 							<img src={Minus} className='plus' alt='minus' />
-							<span>2</span>
+							<span>{cartItem.qty}</span>
 							<img src={Plus} className='plus' alt='plus' />
 
-							<div className='total'>&#8377;2000</div>
+							<div className='total'>&#8377; {getTotalPrice()}</div>
 							<div className='delete'>
 								<img src={Delete} className='plus' alt='delete' />
 							</div>

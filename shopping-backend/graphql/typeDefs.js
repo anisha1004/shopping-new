@@ -15,6 +15,7 @@ module.exports = gql`
 		contentType: String!
 	}
 	type Product {
+		id: ID!
 		productCategory: String!
 		productName: String!
 		productPrice: Int!

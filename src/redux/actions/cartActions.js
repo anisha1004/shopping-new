@@ -1,14 +1,15 @@
 import * as actionTypes from "../constants/cartConstants";
 
 export const addToCart = (data, qty) => async (dispatch, getState) => {
+	console.log(data);
 	dispatch({
 		type: actionTypes.ADD_TO_CART,
 		payload: {
-			product: data._id,
-			name: data.name,
-			imageUrl: data.imageUrl,
-			price: data.price,
-			countInStock: data.countInStock,
+			product: data.id,
+			name: data.productName,
+			imageUrl: data.productImage.data,
+			price: data.productPrice,
+			countInStock: data.productStock,
 			qty,
 		},
 	});

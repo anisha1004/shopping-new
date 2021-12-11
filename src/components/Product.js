@@ -1,8 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/actions/cartActions";
 
 import "../css/Product.css";
 
 const Product = ({ prod }) => {
+	const qty = 1;
+	const dispatch = useDispatch();
+
+	const addToCartHandler = (product) => {
+		dispatch(addToCart(product, qty));
+	};
+
 	return (
 		<div className='prod'>
 			<div className='prod-img'>
@@ -18,7 +27,9 @@ const Product = ({ prod }) => {
 					<div className='desc'>{prod.productName}</div>
 				</div>
 				<div>
-					<button className='add-btn'>ADD</button>
+					<button className='add-btn' onClick={() => addToCartHandler(prod)}>
+						ADD
+					</button>
 				</div>
 			</div>
 		</div>

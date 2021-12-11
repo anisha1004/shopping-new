@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import Cart from "../images/cart.svg";
 import Profile from "../images/profile.svg";
@@ -16,7 +17,9 @@ const Navbar = () => {
 				<div className=''>STORY</div>
 				<div className=''>PACKAGING</div>
 				<div className='cart-btn'>
-					<img src={Cart} alt='cart' />
+					<Link to='/cart'>
+						<img src={Cart} alt='cart' />
+					</Link>
 				</div>
 				<div className='profile-btn'>
 					<img src={Profile} alt='profile' />
