@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./Context/auth";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 							<Route path='/register' element={<Register />} />
 							{/* <Products /> */}
 							<Route path='/cart' element={<Cart />} />
+							<Route path='/checkout' element={<Checkout />} />
 						</Routes>
 					</div>
 				</Router>

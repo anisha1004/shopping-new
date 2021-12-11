@@ -1,0 +1,57 @@
+.checkout-page {
+	height: 100%;
+	width: 100%;
+}
+
+.confirm {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.confirm-img {
+	height: 10vh;
+	object-fit: contain;
+	padding: 0 2vh 2vh;
+}
+
+.white {
+	display: flex;
+	width: 100%;
+}
+
+.check-left {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+.check-right {
+	width: 40%;
+}
+
+.order-confirm {
+	font-weight: 700;
+	font-size: 24px;
+	padding: 6vh 0 1vh;
+}
+
+.wait {
+	width: 80%;
+	padding: 2vh 0 4vh;
+}
+
+.go-home {
+	width: 80%;
+	background-color: #f4de4d;
+	font-family: "Nunito";
+	font-size: 20px;
+	font-weight: 800;
+	border: none;
+	outline: none;
+	padding: 2vh 0;
+}
