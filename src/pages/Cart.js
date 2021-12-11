@@ -26,7 +26,7 @@ const Cart = () => {
 			<div className='checkout'>
 				<img src={Checkout} className='checkout-img' alt='checkout' />
 			</div>
-			{cartItems.length === 0 ? (
+			{/* {cartItems.length === 0 ? (
 				<div> YOUR CART IS EMPTY </div>
 			) : (
 				<div className='grey'>
@@ -47,7 +47,16 @@ const Cart = () => {
 						</div>
 					</div>
 				</div>
-			)}
+			)} */}
+			<div className='grey'>
+				<div className='row-cont'>
+					<Cartrow />
+					<div className='place-order'>
+						<div className='subtotal'>Subtotal &#8377; 2700</div>
+						<button className='place-order-btn'>PLACE ORDER</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
