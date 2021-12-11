@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import LoginI from "../images/login.svg";
 import "../css/Login.css";
 import Radio from "@mui/material/Radio";
-
 import { Link, useNavigate } from "react-router-dom";
 import gql from "graphql-tag";
 import { useMutation } from "@apollo/client";
@@ -41,7 +40,10 @@ const Login = () => {
 			<div className='login-left'>
 				<div className='welcome'>WELCOME BACK</div>
 				<div className='signup'>
-					Don't have an account. <span className='yellow'>Sign up</span>
+					Don't have an account.{" "}
+					<Link to='/register' style={{ textDecoration: "none" }}>
+						<span className='yellow'>Sign up</span>
+					</Link>
 				</div>
 				<form onSubmit={onSubmit}>
 					<div className='user'>
@@ -52,6 +54,7 @@ const Login = () => {
 								type='text'
 								name='username'
 								value={values.username}
+								placeholder='Username'
 								onChange={onChange}></input>
 						</div>
 					</div>
@@ -64,6 +67,7 @@ const Login = () => {
 								type='password'
 								name='password'
 								value={values.password}
+								placeholder='Password'
 								onChange={onChange}></input>
 						</div>
 					</div>

@@ -17,7 +17,7 @@ module.exports = {
 		async getProductsByCategory(_, { category }) {
 			try {
 				category = capitalizeFirstLetter(category);
-				console.log(category);
+
 				const products = await Product.find({ productCategory: category });
 				if (products) return products;
 				else throw new Error("None found");

@@ -9,12 +9,15 @@ import Activewear from "../images/activewear.svg";
 import Gifts from "../images/gifts.svg";
 import Inspiration from "../images/inspiration.svg";
 import Help from "../images/help.svg";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
 			<div className='logo'>
-				<img src={Logo} className='logo-img' />
+				<Link to='/'>
+					<img src={Logo} className='logo-img' alt='logo' />
+				</Link>
 			</div>
 
 			<div className='side-up'>

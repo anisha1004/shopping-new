@@ -1,17 +1,21 @@
 import React from "react";
-import Prod from "../images/product.svg";
+
 import "../css/Product.css";
 
-const Product = () => {
+const Product = ({ prod }) => {
 	return (
 		<div className='prod'>
 			<div className='prod-img'>
-				<img src={Prod} className='p-img' />
+				<img
+					className='p-img'
+					alt='product-img'
+					src={`data:image/svg+xml;base64,${prod.productImage.data}`}
+				/>
 			</div>
 			<div className='price-cont'>
 				<div>
-					<div className='price'>&#8377; 100</div>
-					<div className='desc'>white chair</div>
+					<div className='price'>&#8377; {prod.productPrice}</div>
+					<div className='desc'>{prod.productName}</div>
 				</div>
 				<div>
 					<button className='add-btn'>ADD</button>

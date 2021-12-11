@@ -48,7 +48,9 @@ const Register = () => {
 				<div className='reg-heading'>JOIN THE CULT</div>
 				<div className='login-cont'>
 					<span className='already'> Already have an account. </span>
-					<span className='login-text'>Log in</span>
+					<Link to='/login' style={{ textDecoration: "none" }}>
+						<span className='login-text'>Log in</span>
+					</Link>
 				</div>
 				<form onSubmit={onSubmit}>
 					<div className='reg-options'>

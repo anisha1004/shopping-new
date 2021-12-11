@@ -7,6 +7,8 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import React from "react";
 import App from "./App";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 const httpLink = createHttpLink({
 	uri: "http://localhost:5000/",
@@ -29,6 +31,8 @@ const client = new ApolloClient({
 
 export default (
 	<ApolloProvider client={client}>
-		<App />
+		<Provider store={store}>
+			<App />
+		</Provider>
 	</ApolloProvider>
 );
