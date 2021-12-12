@@ -41,6 +41,10 @@
 	object-fit: contain;
 }
 
+.plus:hover {
+	cursor: pointer;
+}
+
 .obj-img {
 	width: 100%;
 	height: 100px;

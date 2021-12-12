@@ -19,14 +19,18 @@ const Cart = () => {
 	};
 
 	const getCartSubTotal = () => {
-		return cartItems.reduce((price, item) => item.price * item.qty + price, 0);
+		return cartItems.reduce(
+			(price, item) => item.productPrice * item.qty + price,
+			0
+		);
 	};
+
 	return (
 		<div>
 			<div className='checkout'>
 				<img src={Checkout} className='checkout-img' alt='checkout' />
 			</div>
-			{/* {cartItems.length === 0 ? (
+			{cartItems.length === 0 ? (
 				<div> YOUR CART IS EMPTY </div>
 			) : (
 				<div className='grey'>
@@ -47,8 +51,8 @@ const Cart = () => {
 						</div>
 					</div>
 				</div>
-			)} */}
-			<div className='grey'>
+			)}
+			{/* <div className='grey'>
 				<div className='row-cont'>
 					<Cartrow />
 					<div className='place-order'>
@@ -56,7 +60,7 @@ const Cart = () => {
 						<button className='place-order-btn'>PLACE ORDER</button>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

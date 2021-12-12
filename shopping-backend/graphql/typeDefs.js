@@ -35,6 +35,7 @@ module.exports = gql`
 		getUser(username: String): User
 		getProducts: [Product]
 		getProductsByCategory(category: String): [Product]
+		getProductDetail(id: ID!): Product
 	}
 	type Mutation {
 		register(registerInput: RegisterInput): User!

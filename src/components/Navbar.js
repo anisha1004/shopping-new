@@ -12,7 +12,9 @@ const Navbar = () => {
 				<input placeholder='Search store' className='searchbar' />
 			</div>
 			<div className='nav-menu'>
-				<div className=''>PRODUCTS</div>
+				<Link to='/products' style={{ textDecoration: "none", color: "black" }}>
+					<div className=''>PRODUCTS</div>
+				</Link>
 				<div className=''>MANUFACTURING</div>
 				<div className=''>STORY</div>
 				<div className=''>PACKAGING</div>

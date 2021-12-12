@@ -25,5 +25,14 @@ module.exports = {
 				throw new Error(err);
 			}
 		},
+		async getProductDetail(_, { id }) {
+			try {
+				const product = await Product.findById(id);
+				if (product) return product;
+				else throw new Error("Product not found");
+			} catch (err) {
+				throw new Error(err);
+			}
+		},
 	},
 };

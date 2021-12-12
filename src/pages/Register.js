@@ -26,7 +26,7 @@ const Register = () => {
 	};
 
 	const { onChange, onSubmit, values } = useForm(registerUser, initialState);
-	console.log(values);
+
 	const [addUser, { loading }] = useMutation(REGISTER_USER, {
 		update(_, { data: { register: userData } }) {
 			context.login(userData);
