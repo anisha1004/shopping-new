@@ -10,8 +10,9 @@ const Cart = () => {
 	const dispatch = useDispatch();
 	const cart = useSelector((state) => state.cart);
 	const { cartItems } = cart;
-	const qtyChangeHandler = (id, qty) => {
-		dispatch(addToCart(id, qty));
+	const qtyChangeHandler = (product, qty) => {
+		if (qty === 0) dispatch(removeFromCart(product.id));
+		else dispatch(addToCart(product, qty));
 	};
 
 	const removeHandler = (id) => {
