@@ -12,6 +12,7 @@ const Login = () => {
 	const [errors, setErrors] = useState([]);
 	const navigate = useNavigate();
 	const context = useContext(AuthContext);
+	console.log(context);
 
 	const initialState = {
 		username: "",

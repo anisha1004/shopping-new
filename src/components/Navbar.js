@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../Context/auth";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import Cart from "../images/cart.svg";
@@ -13,6 +14,8 @@ const Navbar = () => {
 	const getCartCount = () => {
 		return cartItems.reduce((qty, item) => qty + Number(item.qty), 0);
 	};
+
+	const { user, logout } = useContext(AuthContext);
 	return (
 		<div className='navbar'>
 			<div className='search'>
@@ -25,7 +28,15 @@ const Navbar = () => {
 				</Link>
 				<div className=''>MANUFACTURING</div>
 				<div className=''>STORY</div>
-				<div className=''>PACKAGING</div>
+				{user === null ? (
+					<Link to='/login' style={{ textDecoration: "none", color: "black" }}>
+						<div className=''>LOGIN</div>
+					</Link>
+				) : (
+					<div className='logout-btn' onClick={logout}>
+						LOGOUT
+					</div>
+				)}
 				<div className='cart-btn'>
 					<Link to='/cart'>
 						<img src={Cart} alt='cart' />
@@ -33,7 +44,11 @@ const Navbar = () => {
 					<span className='cartlogo-badge'>{getCartCount()}</span>
 				</div>
 				<div className='profile-btn'>
-					<img src={Profile} alt='profile' />
+					{user === null ? (
+						<img src={Profile} alt='profile' />
+					) : (
+						user.username.toUpperCase()
+					)}
 				</div>
 			</div>
 		</div>

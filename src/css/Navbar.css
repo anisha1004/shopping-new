@@ -38,3 +38,11 @@
 .cartlogo-badge {
 	padding-left: 4px;
 }
+
+.logout-btn {
+	outline: none;
+	color: black;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+}
