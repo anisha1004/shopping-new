@@ -19,6 +19,7 @@
 .white {
 	display: flex;
 	width: 100%;
+	justify-content: space-around;
 }
 
 .check-left {
@@ -31,7 +32,7 @@
 }
 
 .check-right {
-	width: 40%;
+	width: 35%;
 }
 
 .order-confirm {
@@ -54,4 +55,64 @@
 	border: none;
 	outline: none;
 	padding: 2vh 0;
+}
+
+.delivery {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 2vh;
+}
+
+.item-name {
+	color: #333;
+	font-size: 20px;
+	padding-bottom: 1vh;
+}
+
+.item-quantity {
+	color: #777777;
+	font-size: 16px;
+	padding-bottom: 1vh;
+}
+
+.three {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.final-item-list {
+	padding: 5vh 0;
+}
+
+.final-total {
+	display: flex;
+}
+
+.grandtotal {
+	color: #333;
+	font-size: 24px;
+}
+
+.grandprice {
+	color: #333;
+	font-size: 32px;
+}
+
+.grand {
+	display: flex;
+	align-items: center;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.three > span {
+	padding-bottom: 2vh;
+}
+
+.address {
+	display: flex;
+	justify-content: space-between;
 }

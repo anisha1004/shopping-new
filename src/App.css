@@ -2,6 +2,7 @@
 	margin: 0;
 	/* overflow: hidden; */
 	font-family: "Rubik", sans-serif;
+	overflow-x: hidden;
 }
 
 .app {
@@ -18,13 +19,10 @@
 .right {
 	width: 80%;
 	height: 100%;
+	overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
 	width: 0; /* Remove scrollbar space */
 	background: transparent; /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-	background: #ff0000;
 }
