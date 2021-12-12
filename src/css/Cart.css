@@ -27,6 +27,16 @@
 	justify-content: center;
 }
 
+.overflow-scroll {
+	height: 45vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow-y: scroll !important;
+}
+
 .place-order {
 	width: 100%;
 	padding: 20px 0;

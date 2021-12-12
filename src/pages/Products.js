@@ -3,6 +3,7 @@ import Product from "../components/Product";
 import "../css/Products.css";
 import { useEffect } from "react";
 import { gql, useQuery } from "@apollo/client";
+import ProductsLoader from "../images/cart-loader.gif";
 
 const Products = () => {
 	const [pageProducts, setPageProducts] = useState([]);
@@ -17,7 +18,26 @@ const Products = () => {
 		<div>
 			<div className='prod-row'>
 				{loading ? (
-					<div style={{ fontSize: "50px" }}> LOADING </div>
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "center",
+							height: "100%",
+							width: "100%",
+							flexDirection: "column",
+						}}>
+						{" "}
+						<img src={ProductsLoader} alt='products-loader' />{" "}
+						<div
+							style={{
+								fontSize: "30px",
+								fontFamily: "Nunito",
+								fontWeight: "800",
+							}}>
+							PLEASE WAIT WHILE WE FETCH THE RESULTS FOR YOU!
+						</div>
+					</div>
 				) : (
 					pageProducts.map((prod, idx) => (
 						<div className='prod-row-container' key={idx}>

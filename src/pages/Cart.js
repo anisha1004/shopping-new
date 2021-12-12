@@ -36,14 +36,16 @@ const Cart = () => {
 			) : (
 				<div className='grey'>
 					<div className='row-cont'>
-						{cartItems.map((item) => (
-							<Cartrow
-								key={item.id}
-								cartItem={item}
-								qtyChangeHandler={qtyChangeHandler}
-								removeHandler={removeHandler}
-							/>
-						))}
+						<div className='overflow-scroll'>
+							{cartItems.map((item) => (
+								<Cartrow
+									key={item.id}
+									cartItem={item}
+									qtyChangeHandler={qtyChangeHandler}
+									removeHandler={removeHandler}
+								/>
+							))}
+						</div>
 						<div className='place-order'>
 							<div className='subtotal'>
 								Subtotal &#8377; {getCartSubTotal().toFixed(2)}

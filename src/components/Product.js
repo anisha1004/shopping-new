@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions/cartActions";
 
@@ -7,9 +7,10 @@ import "../css/Product.css";
 const Product = ({ prod }) => {
 	const qty = 1;
 	const dispatch = useDispatch();
-
+	const [isAdded, setIsAdded] = useState(false);
 	const addToCartHandler = (product) => {
 		dispatch(addToCart(product, qty));
+		setIsAdded(true);
 	};
 
 	return (
@@ -28,7 +29,7 @@ const Product = ({ prod }) => {
 				</div>
 				<div>
 					<button className='add-btn' onClick={() => addToCartHandler(prod)}>
-						ADD
+						{isAdded ? "ADDED" : "ADD"}
 					</button>
 				</div>
 			</div>

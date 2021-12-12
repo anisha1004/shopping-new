@@ -29,3 +29,12 @@
 	object-fit: contain;
 	padding-right: 9px;
 }
+
+.cart-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cartlogo-badge {
+	padding-left: 4px;
+}

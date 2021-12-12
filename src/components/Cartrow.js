@@ -5,7 +5,7 @@ import Plus from "../images/plus.svg";
 import Minus from "../images/minus.svg";
 import Delete from "../images/delete.svg";
 import Line from "../images/line.svg";
-import ProductImg from "../images/product.svg";
+import CartLoader from "../images/cart-loader3.gif";
 import { gql, useQuery } from "@apollo/client";
 
 const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
@@ -50,7 +50,30 @@ const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
 			<div className='item'>
 				<div className='item-left'>
 					{loading ? (
-						"IMAGE IS LOADING"
+						<div
+							style={{
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "center",
+								height: "100%",
+								width: "100%",
+								flexDirection: "column",
+							}}>
+							{" "}
+							<img
+								src={CartLoader}
+								alt='products-loader'
+								className='obj-img'
+							/>{" "}
+							{/* <div
+								style={{
+									fontSize: "30px",
+									fontFamily: "Nunito",
+									fontWeight: "800",
+								}}>
+								PLEASE WAIT WHILE WE FETCH THE RESULTS FOR YOU!
+							</div> */}
+						</div>
 					) : (
 						<img
 							className='obj-img'
