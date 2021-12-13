@@ -10,6 +10,7 @@ const Products = () => {
 
 	const { data: { getProducts: products } = {}, loading } =
 		useQuery(GET_PRODUCTS);
+
 	useEffect(() => {
 		if (products) setPageProducts(products);
 	}, [products, pageProducts]);

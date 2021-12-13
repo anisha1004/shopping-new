@@ -7,9 +7,10 @@ import "../css/Product.css";
 const Product = ({ prod }) => {
 	const qty = 1;
 	const dispatch = useDispatch();
+
 	const [isAdded, setIsAdded] = useState(false);
 	const addToCartHandler = (product) => {
-		dispatch(addToCart(product, qty));
+		dispatch(addToCart(product, true, qty));
 		setIsAdded(true);
 	};
 

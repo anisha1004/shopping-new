@@ -96,10 +96,6 @@
 	width: 100%;
 }
 
-/*
-CHANGES:
-login-left : width 50 -> 40
-login-right : align and flex along with width
-remember: width added
-logi-img: class added
-*/
+.signin:hover {
+	cursor: pointer;
+}

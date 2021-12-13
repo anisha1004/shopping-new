@@ -10,12 +10,12 @@ const Checkout = () => {
 	return (
 		<div className='checkout-page'>
 			<div className='confirm'>
-				<img src={Confirm} className='confirm-img' />
+				<img src={Confirm} className='confirm-img' alt='something' />
 			</div>
 			<div className='white'>
 				<div className='check-left'>
 					<div>
-						<img src={CheckoutImg} />
+						<img src={CheckoutImg} alt='big' />
 					</div>
 					<div className='order-confirm'>Order Confirmed</div>
 					<div className='wait'>
@@ -25,8 +25,8 @@ const Checkout = () => {
 				</div>
 				<div className='check-right'>
 					<div className='delivery'>
-						<img src={Delivery} />
-						<img src={Dhl} />
+						<img src={Delivery} alt='delivery' />
+						<img src={Dhl} alt='dhl' />
 					</div>
 					<div className='final-item-list'>
 						<div className='final-item'>
@@ -63,12 +63,12 @@ const Checkout = () => {
 						</div>
 					</div>
 
-					<img src={Line} />
+					<img src={Line} alt='line' />
 					<div className='grand'>
 						<span className='grandtotal'>Grand Total</span>{" "}
 						<span className='grandprice'>Rs 2700</span>
 					</div>
-					<img src={Line} />
+					<img src={Line} alt='line' />
 					<div className='address'>
 						<span>Address</span>
 						<span>18 Meera Road, Mumbai</span>

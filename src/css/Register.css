@@ -50,6 +50,11 @@
 	height: 40px;
 	width: max-content;
 	padding: 0px 1vw;
+	transition: all 0.4s;
+}
+
+.register-btn:hover {
+	cursor: pointer;
 }
 
 .reg-down {

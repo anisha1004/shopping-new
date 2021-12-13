@@ -33,9 +33,7 @@ const Navbar = () => {
 						<div className=''>LOGIN</div>
 					</Link>
 				) : (
-					<div className='logout-btn' onClick={logout}>
-						LOGOUT
-					</div>
+					user.username.toUpperCase()
 				)}
 				<div className='cart-btn'>
 					<Link to='/cart'>
@@ -47,7 +45,9 @@ const Navbar = () => {
 					{user === null ? (
 						<img src={Profile} alt='profile' />
 					) : (
-						user.username.toUpperCase()
+						<div className='logout-btn' onClick={logout}>
+							LOGOUT
+						</div>
 					)}
 				</div>
 			</div>

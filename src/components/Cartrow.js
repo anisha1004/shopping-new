@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../css/Cartrow.css";
-import Item1 from "../images/item1.svg";
 import Plus from "../images/plus.svg";
 import Minus from "../images/minus.svg";
 import Delete from "../images/delete.svg";
@@ -9,7 +8,7 @@ import CartLoader from "../images/cart-loader3.gif";
 import { gql, useQuery } from "@apollo/client";
 
 const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
-	const { data, loading, error } = useQuery(GET_PRODUCT_DETAILS, {
+	const { data, loading } = useQuery(GET_PRODUCT_DETAILS, {
 		variables: {
 			getProductDetailId: cartItem.id,
 		},
@@ -23,7 +22,7 @@ const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
 
 	useEffect(() => {
 		data && setProductImage(data.getProductDetail.productImage.data);
-	}, [productImage]);
+	}, [productImage, data]);
 
 	return (
 		<div className='cartrow'>
@@ -142,7 +141,7 @@ const Cartrow = ({ cartItem, qtyChangeHandler, removeHandler }) => {
 					</div>
 				</div>
 			</div> */}
-			<img src={Line} alt='horizontal line' />
+			<img src={Line} alt='horizontal line' className='line-cart' />
 		</div>
 	);
 };

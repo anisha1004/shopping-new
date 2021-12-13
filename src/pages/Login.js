@@ -89,7 +89,7 @@ const Login = () => {
 						<div className='forget'>Forget Password?</div>
 					</div>
 
-					<div>
+					<div className='signin-btn-container'>
 						<button className='signin' type='submit'>
 							{loading ? "LOADING" : "SIGN IN"}
 						</button>
